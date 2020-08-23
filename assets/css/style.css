@@ -3,10 +3,9 @@
 
 .bg {
   background-image: url(../images/translation.jpg);
-  height: 550px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .title {
@@ -46,7 +45,7 @@
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-    
+
 }
 .data-hover {
     padding-left: 300px;
@@ -79,5 +78,5 @@
     }
 }
 .profile {
-    width: 200px;
+    width: 100%;
 }
