@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .bg {
   background-image: url(../images/translation.jpg);
   height: 550px;
@@ -7,16 +8,34 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .title {
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 60px;
+    font-size: 10px;
     font-weight: bold;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: aliceblue;
+    margin-top: 70px;
 }
-.p {
-    margin-left: 50px;
+
+.ml12 {
+  font-weight: 200;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
- 
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.showreels {
+    padding-top: 70px;
+}
+
 .marquee {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -27,18 +46,21 @@
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
+    
 }
 .data-hover {
-    width: fit-content;
+    padding-left: 300px;
     display: flex;
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 5s linear infinite;
     animation-play-state: paused;
+    white-space: nowrap;
+    
 }
 .data-hover span {
     font-size: 40px;
-    padding: 0 2vw;    
+    padding: 0 0.8vw;    
 }
  
 .marquee:hover .data-hover {
@@ -47,10 +69,7 @@
 .marquee:hover .data-hover:after {
     content: attr(data-hover);
 }
-.change {
-    font-size: 40px;
-    color: white;
-}
+
 @keyframes marquee {
     0% {
         transform: translate3d(var(--move-initial), 0, 0);
