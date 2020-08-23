@@ -1,18 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body, html {
-  height: 100%;
-}
-
 .bg {
   background-image: url(../images/translation.jpg);
-  height: 100%;
+  height: 550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.list {
+.title {
     font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
 }
+ 
+.marquee {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+
+.marquee:hover {
+    font-size: 0
+}
+
+.marquee:hover:after {
+    content: attr(data-hover);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
