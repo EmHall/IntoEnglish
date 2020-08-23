@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
 .bg {
   background-image: url(../images/translation.jpg);
   height: 550px;
@@ -8,14 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .title {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 60px;
     font-weight: bold;
 }
-
 .p {
     margin-left: 50px;
 }
@@ -31,7 +28,6 @@
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
 }
-
 .data-hover {
     width: fit-content;
     display: flex;
@@ -40,7 +36,6 @@
     animation: marquee 5s linear infinite;
     animation-play-state: paused;
 }
- 
 .data-hover span {
     font-size: 40px;
     padding: 0 2vw;    
@@ -48,19 +43,22 @@
  
 .marquee:hover .data-hover {
     animation-play-state: running;
+}
+.marquee:hover .data-hover:after {
     content: attr(data-hover);
 }
-
+.change {
+    font-size: 40px;
+    color: white;
+}
 @keyframes marquee {
     0% {
         transform: translate3d(var(--move-initial), 0, 0);
     }
-
     100% {
         transform: translate3d(var(--move-final), 0, 0);
     }
 }
-
 .profile {
     width: 200px;
 }
