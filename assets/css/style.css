@@ -15,10 +15,14 @@
     font-size: 60px;
     font-weight: bold;
 }
+
+.p {
+    margin-left: 50px;
+}
  
 .marquee {
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
     position: relative;
@@ -28,11 +32,22 @@
     --move-final: calc(-50% + var(--offset));
 }
 
-.marquee:hover {
-    font-size: 0
+.data-hover {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
 }
-
-.marquee:hover:after {
+ 
+.data-hover span {
+    font-size: 40px;
+    padding: 0 2vw;    
+}
+ 
+.marquee:hover .data-hover {
+    animation-play-state: running;
     content: attr(data-hover);
 }
 
@@ -46,3 +61,6 @@
     }
 }
 
+.profile {
+    width: 200px;
+}
