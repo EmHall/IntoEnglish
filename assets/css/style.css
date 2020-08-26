@@ -48,6 +48,7 @@
 
 }
 .data-hover {
+    color: white;
     padding-left: 300px;
     display: flex;
     position: relative;
@@ -64,9 +65,11 @@
  
 .marquee:hover .data-hover {
     animation-play-state: running;
+    text-decoration: none;
 }
 .marquee:hover .data-hover:after {
     content: attr(data-hover);
+    text-decoration: none;
 }
 
 @keyframes marquee {
