@@ -1,2 +1,2 @@
 # Language Translation
-Translation of different languages in English
+English translation of different languages
