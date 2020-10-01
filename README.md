@@ -1,2 +1,2 @@
-# IntoEnglish
-Translation service into English
+# Language Translation
+English translation of different languages
