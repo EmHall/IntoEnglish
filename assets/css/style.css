@@ -1,75 +1,93 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+.block {
+    padding-left:40px;
+    padding-right: 40px;
+}
+
 .bg {
-  background-image: url(../images/translation.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100%;
+}
+
+.link-styling {
+    color: black;
+}
+
+.link-styling:hover {
+    color: #8B0000;
 }
 
 .title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    padding-top: 10px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: .2px;
-    -webkit-text-stroke-color: aliceblue;
-    margin-top: 70px;
+    color: black;
 }
 
-.ml12 {
-  font-weight: 200;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
+.redtitle {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: darkred;
+    padding-bottom: 10px;
 }
 
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.showreels {
-    padding-top: 70px;
+.topnav {
+    color: black;
+    margin: auto;
 }
 
 .marquee {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: black;
     position: relative;
     overflow: hidden;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-
+    text-decoration: none;
 }
+
+.marquee:hover {
+    text-decoration: none;
+    color: #8B0000;
+}
+
 .data-hover {
-    color: white;
-    padding-left: 300px;
+    color: #8B0000;
+    padding-left: 100px;
     display: flex;
     position: relative;
     transform: translate3d(var(--move-initial), 0, 0);
     animation: marquee 5s linear infinite;
     animation-play-state: paused;
     white-space: nowrap;
+    text-decoration: none;
     
 }
 .data-hover span {
     font-size: 40px;
     padding: 0 0.8vw;    
+    text-decoration: none;
+    color: black;
 }
- 
+
 .marquee:hover .data-hover {
     animation-play-state: running;
     text-decoration: none;
+    color: black;
 }
 .marquee:hover .data-hover:after {
     content: attr(data-hover);
     text-decoration: none;
+    color: #8B0000;
 }
 
 @keyframes marquee {
@@ -83,3 +101,30 @@
 .profile {
     width: 100%;
 }
+
+.btn-primary {
+    background: #8B0000;
+    border-color: #8B0000;
+}
+
+
+
+
+
+/* function _initTextCalculator(){
+    var textblock = $('#calculateText');
+    textblock.change(_textCalculatorTrigger);
+    textblock.keydown(_textCalculatorTrigger);
+    textblock.keypress(_textCalculatorTrigger);
+    textblock.keyup(_textCalculatorTrigger);
+    textblock.blur(_textCalculatorTrigger);
+    textblock.focus(_textCalculatorTrigger);
+
+    // Fixing bootstrap 3 radio buttons
+    $("#pricesGroup label").on('click', function(){
+        // Once clicked, mark current radio as checked
+        $('input:radio', this).prop("checked", true);
+        // Then call a function to calculate the price
+        _textCalculatorTrigger();
+    });
+} */

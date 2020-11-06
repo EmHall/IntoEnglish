@@ -11,62 +11,77 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Emily</title>
 </head>
-<div class="container">
-    <header>
-        <div class="jumbotron text-center bg-image" style="margin-bottom:0">
-            <h1>Emily Hall</h1>
-        </div>
-​    </header>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+    <div class="title" style="margin-bottom:0">
+        EM HALL
+    </div>
+
+        <nav class="navbar topnav navbar-expand-sm">
+            <button class="navbar-toggler topnav" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse topnav" id="collapsibleNavbar">
+                <ul class="navbar-nav topnav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link link-styling" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="russian.html">Russian</a>
+                        <a class="nav-link link-styling" href="russian.html">Russian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="arabic.html">Arabic</a>
+                        <a class="nav-link link-styling" href="spanish.html">Spanish</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="korean.html">Korean</a>
+                        <a class="nav-link link-styling" href="italian.html">Italian</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="spanish.html"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="italian.html">Italian</a>
+                        <a class="nav-link link-styling" href="french.html">French</a>
                     </li>
                 </ul>
             </div>
         </nav>
+    
     <body>
-    <div class="row">
+
+    <div class="row block">
+
         <div class="col-12 col-md-4 col-xl-4 mt-2">
             <img class="profile" src="../assets/images/emily.jpg" alt="profile picture">
+            
         </div>
+
         <div class="col-12 col-md-8 col-xl-4 mt-2">
-            <h5 class="card-title">What I do</h5>
-            <p class="card-text">I have lived in Russia and hold a translation diploma from the University of Bath.</p>
-            <h5 class="card-title">Why I do it</h5>
-            <p class="card-text">I love films, literature and language.</p>
-            <h5 class="card-title">How I work</h5>
-            <p class="card-text">Work closely with the writer to ensure closest possible translation into English.</p>
-            <h5 class="card-title">What I ask</h5>
-            <p class="card-text">Pricing by the day. A one hour stretch of film usually takes one day.</p>
+            <h5 class="card-title">About Me</h5>
+            <p class="card-text">
+                Hello, I'm Emily Hall, and I and a professional subtitle translator.<br>
+                I have lived in Russia, Spain, Italy and France, and hold a diploma in translation from the University of Bath.<br>
+                I have experience with all sorts of translation assignments, but I excel at subtitle translation, which is how Into English came to be.<br>
+                If you would like a quote for a translation, please copy the text into the box below. If you do not have the text, but you have a video, please write to me through the Contact Me form. Thank you.</p>
+            <form>
+            <h5 class="card-title">Price Calculator</h5>
+            <p>Type in your text to see how much it will cost to get it translated.</p>
+				<div class="form-group">
+					<textarea class="form-control" rows="3" name="calculateText" id="calculateText" placeholder="Copy your text in here"></textarea>
+						<div class="calculateTextCounters">
+		    				Characters : <span id="calculatedCharsTotal">0</span> Words : <span id="calculatedWordsTotal">0</span>
+						</div>
+					</div>
+					<div class="totalpriceblock">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+						<span id="calculatedPriceTotal">0,00</span> €
+
+					</div>
+                    
+			</form>    
         </div>
-        <div class="col-12 col-md-12 col-xl-4 mt-2">
-            <h5>Contact Me</h5>
+
+        <div class="col-12 col-md-8 col-xl-4 mt-2">
+				<h5>Contact Me</h5>
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <small id="emailHelp" class="form-text text-muted">Your email will remain confidential.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
@@ -74,23 +89,13 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+             
+            </div>
+            
         </div>
     </div>
+
     </div>
-    </body>
-    <footer>
-​
-​
-    </footer>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
-</html>
+
+
+
